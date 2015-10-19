@@ -1,19 +1,21 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main()
 {
-    string str = "Hello, world.";
+    std::string str = "Hello, world.";
 
-    cout << str << endl;
+    std::cout << str << std::endl;
 
-    for (string::iterator i = str.begin(); i != str.end(); ++i) {
-        *i = toupper(*i);
+    for (auto &c: str) {
+        c = toupper(c);
     }
 
-    cout << str << endl;
-    //std::cout << str << std::endl;
-    //std::cout << "Hello, world." << std::endl;
+    std::cout << str << std::endl;
+
+    for (auto &c: str) {
+        c = tolower(c);
+    }
+
+    std::cout << str << std::endl;
 }
