@@ -1,5 +1,5 @@
 *.o
 *.out
+cobol_lab
 d_lab
-go-lab
-cobol-lab
+go_lab
