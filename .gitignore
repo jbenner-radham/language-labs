@@ -1,3 +1,5 @@
+*.o
 *.out
+d_lab
 go-lab
 cobol-lab
