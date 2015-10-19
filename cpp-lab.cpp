@@ -4,18 +4,18 @@
 int main()
 {
     std::string str = "Hello, world.";
+    std::string upper = str;
+    std::string lower = str;
 
-    std::cout << str << std::endl;
-
-    for (auto &c: str) {
+    for (auto &c: upper) {
         c = toupper(c);
     }
 
-    std::cout << str << std::endl;
-
-    for (auto &c: str) {
+    for (auto &c: lower) {
         c = tolower(c);
     }
 
     std::cout << str << std::endl;
+    std::cout << upper << std::endl;
+    std::cout << lower << std::endl;
 }
