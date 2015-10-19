@@ -7,12 +7,10 @@ int main()
     std::string upper = str;
     std::string lower = str;
 
-    for (auto &c: upper) {
-        c = toupper(c);
-    }
-
-    for (auto &c: lower) {
-        c = tolower(c);
+    for (auto i = 0; i < str.length(); ++i) {
+        char c = str[i];
+        upper[i] = toupper(c);
+        lower[i] = tolower(c);
     }
 
     std::cout << str << std::endl;
